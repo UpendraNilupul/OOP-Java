@@ -43,9 +43,7 @@ class Point{
 	}
 	
 	public double distance(int x1, int y1){
-		int xDiff = this.x - x1;
-		int yDiff = this.y - y1;
-		
-		return (xDiff^2 + yDiff^2)^1/2;
+		double distance = Math.sqrt(Math.pow(x-x1,2) + Math.pow(y-y1,2));
+		return distance;
 	}
 }
