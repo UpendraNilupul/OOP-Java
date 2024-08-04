@@ -4,7 +4,7 @@ class TestPoint{
 		
 		
 		System.out.println(p1.distance(2,3));
-		System.out.println(p1.getX());
+		
 	}
 }
 
