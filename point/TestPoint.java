@@ -1,6 +1,7 @@
 class TestPoint{
 	public static void main(String args[]){
 		Point p1 = new Point(4,5);
+		System.out.println(p1);
 		
 		
 		System.out.println(p1.distance(2,3));
@@ -40,6 +41,10 @@ class Point{
 	public void setXY(int x, int y){
 		this.x = x;
 		this.y = y;
+	}
+
+	public String toString(){
+		return "(" + this.x + "," + this.y + ")";
 	}
 	
 	public double distance(int x1, int y1){
