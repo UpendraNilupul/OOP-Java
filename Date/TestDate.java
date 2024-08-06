@@ -10,6 +10,7 @@ public class TestDate{
 		Date d2 = new Date(2012, 11, 3);
 		d2.setDate(2011,12,12);
 		System.out.println(d2.getDay());
+		System.out.println(d1);
 	}
 }
 
@@ -52,5 +53,9 @@ class Date{
 		this.year = year;
 		this.month = month;
 		this.day = day;
+	}
+
+	public String toString(){
+		return "Date = " + this.year + "." + this.month + "." + this.day;
 	}
 }
