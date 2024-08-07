@@ -59,6 +59,11 @@ public class Time {
     public Time nextSecond(){
         if(this.second>=59){
             this.minute++;
+            this.second = 00;
+            if(this.minute>59){
+                this.hour++;
+                this.minute = 00;
+            }
         }
         else{
             this.second++;
